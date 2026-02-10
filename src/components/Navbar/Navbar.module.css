@@ -1,0 +1,41 @@
+@reference "../../index.css";
+
+.navContainer {
+    @apply flex items-center justify-between py-6 md:py-12;
+}
+
+.logo {
+    @apply w-12 md:w-16;
+}
+
+.desktopNav {
+    @apply hidden md:flex gap-10;
+}
+
+.navLink {
+    @apply text-dark-grayish-blue hover:text-soft-red transition-colors cursor-pointer;
+}
+
+.mobileMenuBtn {
+    @apply md:hidden z-50;
+}
+
+.mobileOverlay {
+    @apply fixed inset-0 bg-black/50 z-40 transition-opacity duration-300;
+}
+
+.mobileSidebar {
+    @apply fixed top-0 right-0 h-full w-[70%] bg-off-white z-50 p-6 flex flex-col pt-36 gap-6 transition-transform duration-300 ease-in-out;
+}
+
+.mobileSidebarClosed {
+    @apply translate-x-full;
+}
+
+.mobileSidebarOpen {
+    @apply translate-x-0;
+}
+
+.mobileNavLink {
+    @apply text-xl text-very-dark-blue hover:text-soft-red transition-colors;
+}

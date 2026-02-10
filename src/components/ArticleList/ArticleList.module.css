@@ -1,0 +1,33 @@
+@reference "../../index.css";
+
+.listContainer {
+    @apply grid grid-cols-1 lg:grid-cols-3 gap-8 mt-16 mb-20;
+}
+
+.articleCard {
+    @apply flex gap-6 items-center;
+}
+
+.imageWrapper {
+    @apply w-[100px] h-[127px] flex-shrink-0;
+}
+
+.articleImage {
+    @apply w-full h-full object-cover;
+}
+
+.content {
+    @apply flex flex-col justify-between h-full;
+}
+
+.number {
+    @apply text-3xl font-bold text-grayish-blue/50 mb-3;
+}
+
+.title {
+    @apply text-[18px] font-[800] text-very-dark-blue hover:text-soft-red transition-colors cursor-pointer mb-2;
+}
+
+.description {
+    @apply text-dark-grayish-blue text-sm leading-relaxed;
+}

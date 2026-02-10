@@ -1,0 +1,21 @@
+@reference "../../index.css";
+
+.newContainer {
+    @apply bg-very-dark-blue text-off-white p-6 md:p-8 flex flex-col h-full;
+}
+
+.sectionTitle {
+    @apply text-soft-orange text-3xl md:text-4xl font-bold mb-6 md:mb-8;
+}
+
+.articleItem {
+    @apply py-6 md:py-8 border-b border-grayish-blue/30 last:border-0;
+}
+
+.articleTitle {
+    @apply text-xl font-bold mb-2 cursor-pointer hover:text-soft-orange transition-colors;
+}
+
+.articleDesc {
+    @apply text-grayish-blue text-sm leading-relaxed;
+}
